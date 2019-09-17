@@ -16,6 +16,16 @@ public class Book {
         this.isInStock = isInStock;
     }
 
+    public Book(double price, boolean isInStock) {
+        this.price = price;
+        this.isInStock = isInStock;
+    }
+
+    public Book(double price) {
+        this.price = price;
+    }
+
+
     public String getTitle() {
         return title;
     }
@@ -39,20 +49,29 @@ public class Book {
     public void setDescription(String description) {
         this.description = description;
     }
-    public double getPrice(){
+
+    public double getPrice() {
         return price;
     }
 
     public void setPrice(double price) {
         this.price = price;
     }
-    public boolean getisInStock(){
+
+    public boolean getisInStock() {
         return isInStock;
     }
-    public void setisInStock(boolean isInStock){
+
+    public void setisInStock(boolean isInStock) {
         this.isInStock = isInStock;
     }
-    public void getDisplayText(){
-        System.out.println("This is the author, title, and description: " + getAuthor() + ", " + getTitle() + ", " + getDescription() + ".");
+
+//    public String getDisplayText() {
+//        String result = "";
+//        result = getTitle() + getAuthor() + getDescription();
+////        System.out.println("This is the author, title, and description: " + getAuthor() + ", " + getTitle() + ", " + getDescription() + ".");
+//        return result;
+//    }
+
     }
 }
